@@ -1,6 +1,5 @@
 
 html, body {
-  height: 100%;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -9,6 +8,8 @@ a {
 }
 
 .homepage {
+  padding-top: 10%;
+
   & > .homepage-container {
     height: 100%;
     & > .row {
