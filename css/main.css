@@ -2,6 +2,9 @@ html, body {
   height: 100%;
   font-family: 'Roboto', sans-serif; }
 
+a {
+  color: #007579; }
+
 .homepage > .homepage-container {
   height: 100%; }
   .homepage > .homepage-container > .row {
@@ -9,14 +12,22 @@ html, body {
     .homepage > .homepage-container > .row h1 {
       margin: 0;
       font-weight: bold; }
+  .homepage > .homepage-container ul .nav-link {
+    color: #003b79; }
+  .homepage > .homepage-container ul .nav-link:first-child {
+    padding-left: 0; }
 
 .secondary-page > .secondary-page-container h4 {
   font-weight: bold;
   margin: 0; }
-
-ul .nav-link {
+.secondary-page > .secondary-page-container ul .nav-link {
   color: #003b79; }
-ul .nav-link:first-child {
+.secondary-page > .secondary-page-container ul .nav-link:first-child {
   padding-left: 0; }
+
+.community-list {
+  line-height: 12px; }
+  .community-list img {
+    min-height: 40px; }
 
 /*# sourceMappingURL=main.css.map */

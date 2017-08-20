@@ -4,6 +4,10 @@ html, body {
   font-family: 'Roboto', sans-serif;
 }
 
+a {
+  color: #007579;
+}
+
 .homepage {
   & > .homepage-container {
     height: 100%;
@@ -12,6 +16,14 @@ html, body {
       h1 {
         margin: 0;
         font-weight: bold;
+      }
+    }
+    ul {
+      .nav-link {
+        color: #003b79
+      }
+      .nav-link:first-child {
+        padding-left: 0;
       }
     }
   }
@@ -23,14 +35,20 @@ html, body {
       font-weight: bold;
       margin: 0;
     }
+    ul {
+      .nav-link {
+        color: #003b79
+      }
+      .nav-link:first-child {
+        padding-left: 0;
+      }
+    }
   }
 }
 
-ul {
-  .nav-link {
-    color: #003b79
-  }
-  .nav-link:first-child {
-    padding-left: 0;
+.community-list {
+  line-height: 12px;
+  img {
+    min-height: 40px;
   }
 }
