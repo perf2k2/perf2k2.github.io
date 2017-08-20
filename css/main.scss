@@ -1,0 +1,30 @@
+
+html, body {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.homepage {
+  & > .homepage-container {
+    height: 100%;
+    & > .row {
+      height: 100%;
+      h1 {
+        margin: 0;
+      }
+    }
+  }
+}
+
+h1, h2 {
+  font-weight: bold;
+}
+
+ul {
+  .nav-link {
+    color: #003b79
+  }
+  .nav-link:first-child {
+    padding-left: 0;
+  }
+}
