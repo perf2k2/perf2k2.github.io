@@ -1,0 +1,81 @@
+---
+layout: secondary
+title: Проекты - Poligonize-it
+---
+
+<link href="/css/prism.css" rel="stylesheet">
+<style>
+    #image {
+        width: 100%;
+    }
+</style>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 text-right">
+            <a href="/projects.html">Проекты</a> /
+            <h3 class="text-muted">Poligonize It!</h3>
+        </div>
+    </div>
+
+    <div class="row justify-content-lg-center mt-5">
+        <div class="col-5">
+
+            <canvas id="image"></canvas>
+
+        </div>
+        <div class="col-7">
+
+                        <pre>
+                <code class="language-javascript">
+window.onload = function () {
+    var image = new PoligonizeIt('image');
+
+    var square = new Polygon();
+    square.addPoint(new Point(10, 10));
+    square.addPoint(new Point(100, 10));
+    square.addPoint(new Point(100, 100));
+    square.addPoint(new Point(10, 100));
+
+    var polygon = new Polygon();
+    polygon.addPoint(new Point(120, 30));
+    polygon.addPoint(new Point(120, 80));
+    polygon.addPoint(new Point(220, 100));
+    polygon.addPoint(new Point(280, 60));
+    polygon.addPoint(new Point(280, 20));
+    polygon.addPoint(new Point(250, 10));
+
+    image.drawPolygon(square, '#000000');
+    image.drawPolygon(polygon, 'green');
+}
+                </code>
+            </pre>
+
+        </div>
+    </div>
+</div>
+
+<script src="/js/prism.js"></script>
+<script src="/js/polygonize-it.min.js"></script>
+<script type="text/javascript">
+    window.onload = function () {
+        var image = new PoligonizeIt('image');
+
+        var square = new Polygon();
+        square.addPoint(new Point(10, 10));
+        square.addPoint(new Point(100, 10));
+        square.addPoint(new Point(100, 100));
+        square.addPoint(new Point(10, 100));
+
+        var polygon = new Polygon();
+        polygon.addPoint(new Point(120, 30));
+        polygon.addPoint(new Point(120, 80));
+        polygon.addPoint(new Point(220, 100));
+        polygon.addPoint(new Point(280, 60));
+        polygon.addPoint(new Point(280, 20));
+        polygon.addPoint(new Point(250, 10));
+
+        image.drawPolygon(square, '#000000');
+        image.drawPolygon(polygon, 'green');
+    }
+</script>
