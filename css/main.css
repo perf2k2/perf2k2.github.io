@@ -21,9 +21,12 @@ a {
     .homepage > .homepage-container ul .nav-link:first-child {
       padding-left: 0; }
 
-.secondary-page > .secondary-page-container h4 {
-  font-weight: bold;
-  margin: 0; }
+.secondary-page > .secondary-page-container a.main-page-link, .secondary-page > .secondary-page-container a.main-page-link:visited, .secondary-page > .secondary-page-container a.main-page-link:visited:hover {
+  text-decoration: none;
+  color: #000; }
+  .secondary-page > .secondary-page-container a.main-page-link h4, .secondary-page > .secondary-page-container a.main-page-link:visited h4, .secondary-page > .secondary-page-container a.main-page-link:visited:hover h4 {
+    font-weight: bold;
+    margin: 0; }
 .secondary-page > .secondary-page-container ul .nav-link {
   color: #003b79; }
 .secondary-page > .secondary-page-container ul .nav-link:first-child {

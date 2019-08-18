@@ -36,9 +36,14 @@ a {
 
 .secondary-page {
   & > .secondary-page-container {
-    h4 {
-      font-weight: bold;
-      margin: 0;
+    a.main-page-link, a.main-page-link:visited, a.main-page-link:visited:hover {
+      text-decoration: none;
+      color: #000;
+
+      h4 {
+        font-weight: bold;
+        margin: 0;
+      }
     }
     ul {
       .nav-link {
